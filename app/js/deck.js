@@ -5,6 +5,8 @@ var Deck = module.exports = function () {
    this.build();
 };
 
+
+// build the deck
 Deck.prototype.build = function () {
 
   var i;
@@ -26,8 +28,9 @@ Deck.prototype.build = function () {
   this.cards.push(11);
   this.cards.push(11);
 };
-
+// draw a random card from the deck
 Deck.prototype.draw = function () {
   var i = Math.round(Math.random() * this.cards.length);
+  // we are using array.splice so that we remove the card from the deck
   return this.cards.splice(i, 1)[0];
 };
