@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>blackjack</title>
+  <script src="app/bundle.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-fluid well dealer secret" id ="dealer">
+      <ul data-cards>
+
+      </ul>
+      <h1 data-bust>Dealer is bust</h1>
+
+    </div>
+    <div class="container-fluid well" id ="player">
+      <ul data-cards>
+
+      </ul>
+      <h1 data-bust>Oh no you had to show off didn't you?!?</h1>
+      <button class="btn btn-success" name="hit">HIT ME!</button>
+      <button class="btn btn-warning" name="stay">Ok thats enough</button>
+    </div>
+    <div class="container-fluid well" id ="score">
+      <h1 data-score></h1>
+    </div>
+  </div>
+</body>
