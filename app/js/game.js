@@ -25,7 +25,7 @@ Game.prototype.playerHit = function () {
   this.events.trigger('playerUpdate');
   if (this.player.hand.bust) {
     this.events.trigger('playerBust');
-    this.dealerTurn();
+    this.events.trigger('gameEnd');
   }
 };
 
